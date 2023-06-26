@@ -1,61 +1,3 @@
-/* line 1, ../ballons-main/src/sass/base/_typography.sass */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #777777;
-  font-size: 1.6rem;
-  letter-spacing: .2rem;
-}
-
-/* line 10, ../ballons-main/src/sass/base/_typography.sass */
-.title-first {
-  color: #ffffff;
-  font-family: 'Roboto';
-}
-
-/* line 13, ../ballons-main/src/sass/base/_typography.sass */
-.title-first__main {
-  display: block;
-  font-weight: 800;
-  font-size: 5rem;
-  line-height: 6rem;
-  letter-spacing: 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  animation: leftToRight;
-  animation-duration: 1.7s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  backface-visibility: hidden;
-}
-
-/* line 28, ../ballons-main/src/sass/base/_typography.sass */
-.title-first__secondary {
-  display: block;
-  font-weight: 300;
-  font-size: 4rem;
-  line-height: 4.8rem;
-  letter-spacing: .2rem;
-  animation-name: RightToleft;
-  animation-duration: 1.7s;
-  animation-delay: 1s;
-  animation-timing-function: ease;
-  backface-visibility: hidden;
-  margin-bottom: 5rem;
-}
-
-/* line 41, ../ballons-main/src/sass/base/_typography.sass */
-.title-secondary {
-  font-size: 3.6rem;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  background: linear-gradient(90deg, rgba(161, 79, 3, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
 @keyframes BtnToUp {
   0% {
     opacity: 0;
@@ -116,6 +58,84 @@ body {
 /* line 13, ../ballons-main/src/sass/base/_base.sass */
 .container {
   background-color: #F7F7F7;
+}
+
+/* line 1, ../ballons-main/src/sass/base/_typography.sass */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 1.6rem;
+  letter-spacing: .2rem;
+}
+
+/* line 10, ../ballons-main/src/sass/base/_typography.sass */
+.title-first {
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+/* line 13, ../ballons-main/src/sass/base/_typography.sass */
+.title-first__main {
+  display: block;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  animation: leftToRight;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+}
+
+/* line 28, ../ballons-main/src/sass/base/_typography.sass */
+.title-first__secondary {
+  display: block;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: .2rem;
+  animation-name: RightToleft;
+  animation-duration: 1.7s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  backface-visibility: hidden;
+  margin-bottom: 5rem;
+}
+
+/* line 41, ../ballons-main/src/sass/base/_typography.sass */
+.title-secondary {
+  text-align: center;
+  display: inline-block;
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(161, 79, 3, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .4s;
+  ackface-visibility: hidden;
+}
+
+/* line 53, ../ballons-main/src/sass/base/_typography.sass */
+.title-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0rem 0.4rem 0.4rem black;
+}
+
+/* line 1, ../ballons-main/src/sass/base/_utilities.sass */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 4, ../ballons-main/src/sass/base/_utilities.sass */
+.margin-bottom-80px {
+  margin-bottom: 8rem;
 }
 
 /* line 5, ../ballons-main/src/sass/components/_button.sass */
